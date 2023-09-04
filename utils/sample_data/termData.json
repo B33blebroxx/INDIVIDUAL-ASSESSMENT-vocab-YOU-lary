@@ -1,82 +1,82 @@
 {
-  "-NdMCTM5ryEqDSgY8PJH": {
+  "-NdXUpHLDNktbRmF6fM_": {
     "firebaseKey": 1,
-    "title": "Brendan",
+    "title": "How to JavaScript",
     "description": "",
-    "timeSubmitted": "7/27/2023",
+    "timeSubmitted": "12/24/2022",
     "uid": "",
-    "language_tech": "HTML"
+    "tech": "CSS"
   },
-  "-NdMCTM6voAVH2k7HiDb": {
+  "-NdXUpHMSNQQ7G-x3mK-": {
     "firebaseKey": 2,
-    "title": "Morlee",
+    "title": "How to CSS",
     "description": "",
-    "timeSubmitted": "11/8/2022",
+    "timeSubmitted": "1/2/2023",
     "uid": "",
-    "language_tech": "CSS"
+    "tech": "CSS"
   },
-  "-NdMCTM7Bby63SJF3zed": {
+  "-NdXUpHNqYzr5uozDp5A": {
     "firebaseKey": 3,
-    "title": "Virgilio",
+    "title": "How to CSS",
     "description": "",
-    "timeSubmitted": "5/9/2023",
+    "timeSubmitted": "3/17/2023",
     "uid": "",
-    "language_tech": "HTML"
+    "tech": "Javascript"
   },
-  "-NdMCTM7Bby63SJF3zee": {
+  "-NdXUpHNqYzr5uozDp5B": {
     "firebaseKey": 4,
-    "title": "Marshal",
-    "description": "  ",
-    "timeSubmitted": "11/11/2022",
+    "title": "How to JavaScript",
+    "description": "",
+    "timeSubmitted": "3/17/2023",
     "uid": "",
-    "language_tech": "CSS"
+    "tech": "HTML"
   },
-  "-NdMCTM8_osI3qROsCI4": {
+  "-NdXUpHNqYzr5uozDp5C": {
     "firebaseKey": 5,
-    "title": "Onfre",
+    "title": "How to make functions",
     "description": "",
-    "timeSubmitted": "5/30/2023",
+    "timeSubmitted": "7/24/2023",
     "uid": "",
-    "language_tech": "Javascript"
+    "tech": "HTML"
   },
-  "-NdMCTM8_osI3qROsCI5": {
+  "-NdXUpHOz5J6Kqe5m4U7": {
     "firebaseKey": 6,
-    "title": "Karrah",
+    "title": "How to CSS",
     "description": "",
-    "timeSubmitted": "11/9/2022",
+    "timeSubmitted": "11/4/2022",
     "uid": "",
-    "language_tech": "Javascript"
+    "tech": "Javascript"
   },
-  "-NdMCTM9XR00umiYe_m_": {
+  "-NdXUpHOz5J6Kqe5m4U8": {
     "firebaseKey": 7,
-    "title": "Garrek",
+    "title": "How to CSS",
     "description": "",
-    "timeSubmitted": "2/2/2023",
+    "timeSubmitted": "6/14/2023",
     "uid": "",
-    "language_tech": "CSS"
+    "tech": "CSS"
   },
-  "-NdMCTM9XR00umiYe_ma": {
+  "-NdXUpHPiOMZZuxS3E-M": {
     "firebaseKey": 8,
-    "title": "Nedda",
+    "title": "How to CSS",
     "description": "",
-    "timeSubmitted": "10/12/2022",
+    "timeSubmitted": "1/12/2023",
     "uid": "",
-    "language_tech": "Javascript"
+    "tech": "Javascript"
   },
-  "-NdMCTMALPzeIe_TQdsZ": {
+  "-NdXUpHPiOMZZuxS3E-N": {
     "firebaseKey": 9,
-    "title": "Ola",
+    "title": "How to HTML",
     "description": "",
-    "timeSubmitted": "5/28/2023",
+    "timeSubmitted": "5/17/2023",
     "uid": "",
-    "language_tech": "Webpack"
+    "tech": "CSS"
   },
-  "-NdMCTMALPzeIe_TQds_": {
+  "-NdXUpHQE7bzTiXS2EwX": {
     "firebaseKey": 10,
-    "title": "Renee",
+    "title": "How to HTML",
     "description": "",
-    "timeSubmitted": "1/3/2023",
+    "timeSubmitted": "5/3/2023",
     "uid": "",
-    "language_tech": "Javascript"
+    "tech": "CSS"
   }
 }
