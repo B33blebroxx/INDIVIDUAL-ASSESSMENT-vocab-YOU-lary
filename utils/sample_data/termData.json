@@ -5,15 +5,15 @@
     "description": "",
     "timeSubmitted": "12/24/2022",
     "uid": "7s0SkJu7ujUKCUIPeMUjYbB9mEN2",
-    "tech": "CSS"
+    "tech": "JavaScript"
   },
   "-NdXUpHMSNQQ7G-x3mK-": {
     "firebaseKey": 2,
-    "title": "How to CSS",
+    "title": "How to React",
     "description": "",
     "timeSubmitted": "1/2/2023",
     "uid": "7s0SkJu7ujUKCUIPeMUjYbB9mEN2",
-    "tech": "CSS"
+    "tech": "React"
   },
   "-NdXUpHNqYzr5uozDp5A": {
     "firebaseKey": 3,
@@ -21,23 +21,23 @@
     "description": "",
     "timeSubmitted": "3/17/2023",
     "uid": "7s0SkJu7ujUKCUIPeMUjYbB9mEN2",
-    "tech": "Javascript"
+    "tech": "CSS"
   },
   "-NdXUpHNqYzr5uozDp5B": {
     "firebaseKey": 4,
-    "title": "How to JavaScript",
+    "title": "How to React",
     "description": "",
     "timeSubmitted": "3/17/2023",
     "uid": "7s0SkJu7ujUKCUIPeMUjYbB9mEN2",
-    "tech": "HTML"
+    "tech": "React"
   },
   "-NdXUpHNqYzr5uozDp5C": {
     "firebaseKey": 5,
-    "title": "How to make functions",
+    "title": "How to JavaScript",
     "description": "",
     "timeSubmitted": "7/24/2023",
     "uid": "7s0SkJu7ujUKCUIPeMUjYbB9mEN2",
-    "tech": "HTML"
+    "tech": "JavaScript"
   },
   "-NdXUpHOz5J6Kqe5m4U7": {
     "firebaseKey": 6,
@@ -45,7 +45,7 @@
     "description": "",
     "timeSubmitted": "11/4/2022",
     "uid": "7s0SkJu7ujUKCUIPeMUjYbB9mEN2",
-    "tech": "Javascript"
+    "tech": "CSS"
   },
   "-NdXUpHOz5J6Kqe5m4U8": {
     "firebaseKey": 7,
@@ -57,11 +57,11 @@
   },
   "-NdXUpHPiOMZZuxS3E-M": {
     "firebaseKey": 8,
-    "title": "How to CSS",
+    "title": "How to JavaScript",
     "description": "",
     "timeSubmitted": "1/12/2023",
     "uid": "7s0SkJu7ujUKCUIPeMUjYbB9mEN2",
-    "tech": "Javascript"
+    "tech": "JavaScript"
   },
   "-NdXUpHPiOMZZuxS3E-N": {
     "firebaseKey": 9,
@@ -69,14 +69,14 @@
     "description": "",
     "timeSubmitted": "5/17/2023",
     "uid": "7s0SkJu7ujUKCUIPeMUjYbB9mEN2",
-    "tech": "CSS"
+    "tech": "HTML"
   },
   "-NdXUpHQE7bzTiXS2EwX": {
     "firebaseKey": 10,
-    "title": "How to HTML",
+    "title": "How to React",
     "description": "",
     "timeSubmitted": "5/3/2023",
     "uid": "7s0SkJu7ujUKCUIPeMUjYbB9mEN2",
-    "tech": "CSS"
+    "tech": "React"
   }
 }
