@@ -17,10 +17,15 @@ const showTerms = (array) => {
       domString += `<div class="card" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-title">${item.title}</h5>
-        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="card-link">Card link</a>
-        <a href="#" class="card-link">Another link</a>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Term Description</h6>
+        <p class="card-text">${item.description}</p>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Tech</h6>
+        <p class="card-text">${item.tech}</p>
+        <h6 class="card-subtitle mb-2 text-body-secondary">Date/Time Submitted</h6>
+        <p class="card-text">${item.timeSubmitted}</p>
+        <button type="button" id="view-term-btn" class="btn btn-outline-dark">View</button>
+        <button type="button" id="delete-term-btn" class="btn btn-outline-danger">Delete</button>
+        <button type="button" id="update-term-btn" class="btn btn-outline-primary">Update</button>
       </div>
     </div>`;
     });
