@@ -67,10 +67,22 @@ const deleteTerm = (firebaseKey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const searchTerms = (searchValue, uid) => new Promise((resolve, reject) => {
+  getTerms(uid).then((termsArray) => {
+    const searchResults = termsArray.filter((term) => (
+      term.title.toLowerCase().includes(searchValue)
+      || term.description.toLowerCase().includes(searchValue)
+    ));
+
+    resolve(searchResults);
+  }).catch(reject);
+});
+
 export {
   getSingleTerm,
   getTerms,
   createTerm,
   updateTerm,
-  deleteTerm
+  deleteTerm,
+  searchTerms
 };
