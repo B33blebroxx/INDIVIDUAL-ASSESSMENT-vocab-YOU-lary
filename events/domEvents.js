@@ -1,7 +1,7 @@
 import addTermForm from '../forms/addTerm';
-import { getSingleTerm, deleteTerm } from '../api/termData';
-import viewTerm from '../pages/viewTerm';
-import { showTerms } from '../pages/showTerms';
+import { getSingleTerm, deleteTerm, getTerms } from '../api/termData';
+import { viewTerm } from '../pages/viewTerm';
+import { emptyTerms, showTerms } from '../pages/showTerms';
 
 const domEvents = (user) => {
   document.querySelector('#navigation').addEventListener('click', (e) => {
@@ -22,8 +22,19 @@ const domEvents = (user) => {
     }
 
     if (e.target.id.includes('delete-term-btn')) {
-      const [, firebaseKey] = e.target.id.split('--');
-      deleteTerm(firebaseKey).then(showTerms);
+      // eslint-disable-next-line no-alert
+      if (window.confirm('Are you sure you want to delete?')) {
+        const [, firebaseKey] = e.target.id.split('--');
+        deleteTerm(firebaseKey).then(() => {
+          getTerms(user.uid).then((array) => {
+            if (array.length) {
+              showTerms(array);
+            } else {
+              emptyTerms();
+            }
+          });
+        });
+      }
     }
   });
 };

@@ -1,6 +1,11 @@
 import clearDom from '../utils/clearDom';
 import renderToDom from '../utils/renderToDom';
 
+const emptyTerms = () => {
+  const domString = '<h1>No Terms</h1>';
+  renderToDom('#view', domString);
+};
+
 const viewTerm = (obj) => {
   clearDom();
 
@@ -22,4 +27,4 @@ const viewTerm = (obj) => {
   renderToDom('#view', domString);
 };
 
-export default viewTerm;
+export { viewTerm, emptyTerms };
