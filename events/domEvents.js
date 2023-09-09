@@ -12,7 +12,8 @@ const domEvents = (user) => {
 
   document.querySelector('#main-container').addEventListener('click', (e) => {
     if (e.target.id.includes('update-term-btn')) {
-      addTermForm(user.uid);
+      const [, firebaseKey] = e.target.id.split('--');
+      getSingleTerm(firebaseKey).then((termObj) => addTermForm(user.uid, termObj));
     }
 
     if (e.target.id.includes('view-term-btn')) {
