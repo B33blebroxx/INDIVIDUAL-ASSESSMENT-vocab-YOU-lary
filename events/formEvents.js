@@ -15,8 +15,8 @@ const formEvents = (user) => {
         tech: document.querySelector('#term-tech').value
       };
 
-      createTerm(payload).then(({ firebaseKey }) => {
-        const patchPayload = { firebaseKey };
+      createTerm(payload).then(({ name }) => {
+        const patchPayload = { firebaseKey: name };
 
         updateTerm(patchPayload).then(() => {
           getTerms(user.uid).then(showTerms);
@@ -25,12 +25,13 @@ const formEvents = (user) => {
     }
 
     if (e.target.id.includes('update-term')) {
-      console.warn('clicked');
+      const capturedDate = Date(e);
+      const sqlDate = new Date(capturedDate).toISOString().slice(0, 19).replace('T', ' ');
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
         title: document.querySelector('#title').value,
         description: document.querySelector('#description').value,
-        timeSubmitted: document.querySelector('#timeSubmitted').value,
+        timeSubmitted: sqlDate,
         uid: user.uid,
         tech: document.querySelector('#term-tech').value,
         firebaseKey,

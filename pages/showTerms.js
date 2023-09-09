@@ -23,9 +23,9 @@ const showTerms = (array) => {
         <p class="card-text">${item.tech}</p>
         <h6 class="card-subtitle mb-2 text-body-secondary">Date/Time Submitted</h6>
         <p class="card-text">${item.timeSubmitted}</p>
-        <button type="button" id="view-term-btn" class="btn btn-outline-dark">View</button>
-        <button type="button" id="delete-term-btn" class="btn btn-outline-danger">Delete</button>
-        <button type="button" id="update-term-btn" class="btn btn-outline-primary">Update</button>
+        <button type="button" id="view-term-btn--${item.firebaseKey}" class="btn btn-outline-dark">View</button>
+        <button type="button" id="delete-term-btn--${item.firebaseKey}" class="btn btn-outline-danger">Delete</button>
+        <button type="button" id="update-term-btn--${item.firebaseKey}" class="btn btn-outline-primary">Update</button>
       </div>
     </div>`;
     });

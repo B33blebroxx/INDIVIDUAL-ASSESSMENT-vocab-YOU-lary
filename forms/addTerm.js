@@ -8,7 +8,7 @@ const addTermForm = (uid, obj = {}) => {
   <input type="text" placeholder="Your Term" class="form-control" id="title" value="${obj.title || ''}" required>
 <div class="mb-3">
   <label for="term-description" class="form-label">Term Description</label>
-  <textarea class="form-control" id="description" rows="3" placeholder="Term Description" value="${obj.description}" || ''></textarea>
+  <textarea class="form-control" id="description" rows="3" placeholder="Term Description" value="${obj.description || ''}"></textarea>
 </div>
 <select id="term-tech" class="form-select" Aria-label="Term Tech">
 <option selected disabled>${obj.tech || 'Select Tech Type'}</option>
@@ -17,7 +17,7 @@ const addTermForm = (uid, obj = {}) => {
 <option value="${obj.tech || 'HTML'}">HTML</option>
 <option value="${obj.tech || 'React'}">React</option>
 </select>
-<button type="submit" id="submit-term" class="btn btn-primary">Submit Term
+<button type="submit" class="btn btn-primary">Submit Term
 </button>
 </form>`;
 
