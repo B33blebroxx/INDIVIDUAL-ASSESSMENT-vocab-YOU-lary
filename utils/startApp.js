@@ -5,6 +5,7 @@ import navBar from '../components/shared/navBar';
 import domBuilder from '../components/shared/domBuilder';
 import domEvents from '../events/domEvents';
 import formEvents from '../events/formEvents';
+import navEvents from '../events/navEvents';
 
 const startApp = (user) => {
   domBuilder();
@@ -18,6 +19,7 @@ const startApp = (user) => {
   });
   domEvents(user);
   formEvents(user);
+  navEvents(user);
   logoutButton();
 };
 
