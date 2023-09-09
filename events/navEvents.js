@@ -20,19 +20,19 @@ const navEvents = (user) => {
   });
 
   document.querySelector('#filter-CSS').addEventListener('click', () => {
-    filterCSS().then(showTerms);
+    filterCSS(user.uid).then(showTerms);
   });
 
   document.querySelector('#filter-HTML').addEventListener('click', () => {
-    filterHTML().then(showTerms);
+    filterHTML(user.uid).then(showTerms);
   });
 
   document.querySelector('#filter-React').addEventListener('click', () => {
-    filterReact().then(showTerms);
+    filterReact(user.uid).then(showTerms);
   });
 
   document.querySelector('#filter-JS').addEventListener('click', () => {
-    filterJS().then(showTerms);
+    filterJS(user.uid).then(showTerms);
   });
 
   document.querySelector('#nav-title').addEventListener('click', () => {
