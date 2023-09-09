@@ -78,11 +78,71 @@ const searchTerms = (searchValue, uid) => new Promise((resolve, reject) => {
   }).catch(reject);
 });
 
+const filterCSS = (tech) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/terms/.json?orderBy="tech"&equalTo"${tech}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const filteredTerms = Object.values(data).filter((term) => term.tech === 'CSS');
+      resolve(filteredTerms);
+    }).catch(reject);
+});
+
+const filterHTML = (tech) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/terms/.json?orderBy="tech"&equalTo"${tech}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const filteredTerms = Object.values(data).filter((term) => term.tech === 'HTML');
+      resolve(filteredTerms);
+    }).catch(reject);
+});
+
+const filterReact = (tech) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/terms/.json?orderBy="tech"&equalTo"${tech}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const filteredTerms = Object.values(data).filter((term) => term.tech === 'React');
+      resolve(filteredTerms);
+    }).catch(reject);
+});
+
+const filterJS = (tech) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/terms/.json?orderBy="tech"&equalTo"${tech}"`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      const filteredTerms = Object.values(data).filter((term) => term.tech === 'JavaScript');
+      resolve(filteredTerms);
+    }).catch(reject);
+});
+
 export {
   getSingleTerm,
   getTerms,
   createTerm,
   updateTerm,
   deleteTerm,
-  searchTerms
+  searchTerms,
+  filterCSS,
+  filterHTML,
+  filterReact,
+  filterJS
 };
