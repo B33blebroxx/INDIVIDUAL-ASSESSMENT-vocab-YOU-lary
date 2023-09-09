@@ -43,8 +43,34 @@ const updateTerm = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const getSingleTerm = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/terms/${firebaseKey}.json`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
+const deleteTerm = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/terms/${firebaseKey}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 export {
+  getSingleTerm,
   getTerms,
   createTerm,
-  updateTerm
+  updateTerm,
+  deleteTerm
 };
